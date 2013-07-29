@@ -1,6 +1,3 @@
----
-published: false
----
 
 JSON-Scripted-Web-Service
 =========================
