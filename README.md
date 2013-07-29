@@ -56,6 +56,27 @@ The parameters should be passed as body of this REST request. Remember, the para
 The Parameter will be available to the Script of JSON Scripted Web service as `request` object. See the TEST CASES folder for examples and screens.
 
 
+TODO:
+-------
+
+* Add JSONParser to check if the JSON that is being received and Sent is a valid JSON, else raise an error
+* Add a check so that only the user with a read permission can execute the queries.  
+
+
+ Other Links: 
+---------------
+
+* For installation of Update Sets please visit this [WIKI LINK](http://wiki.servicenow.com/index.php?title=Using_Update_Sets)
+
+
+Thanks
+-------
+
+* To user [CAPAJC](http://community.servicenow.com/users/capajc) for this [post](http://community.servicenow.com/forum/14327), and my friend and collegue
+[Mohammed Ishaq](http://community.servicenow.com/users/mkhan) for asking the question.
+
+
+
 
 
 
