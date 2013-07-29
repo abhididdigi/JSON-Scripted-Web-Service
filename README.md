@@ -43,8 +43,9 @@ Once you are done writing your script - Click on `Submit` or `Save`. Notice that
 ### Step2: Pulling/Calling the Script written in Step 1 
 You can call any JSON Scripted Web Service  over REST using this URL:
 
+```
 https://[your_instance].service-now.com/ScriptedJSON.do?sysparm_raw=true&sysparm_scriptedName=[name_of_the_scripted_service_created_in_step_1]
-
+```
 #### Setting the Authentication:
 
 The headers should be set to use Basic Authentication.
