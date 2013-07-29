@@ -63,7 +63,7 @@ TODO:
 * Add a check so that only the user with a read permission can execute the queries.  
 
 
- Other Links: 
+Other Links: 
 ---------------
 
 * For installation of Update Sets please visit this [WIKI LINK](http://wiki.servicenow.com/index.php?title=Using_Update_Sets)
