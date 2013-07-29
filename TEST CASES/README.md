@@ -19,6 +19,6 @@ Send a `JSON` with all the incidents belonging to a Problem sys_id( that will be
 
 ## Screens : 
 
-[](/http://servicenowdiary.com/wp-content/uploads/2013/07/TestCase1.png)
+<img src="http://servicenowdiary.com/wp-content/uploads/2013/07/TestCase1.png"/>
 
 
