@@ -74,6 +74,7 @@ return attachResponse;
 
 * As you notice in above examples, what ever the user passes in the body of the REST call will be passed as `request` object that can be used in the Script of the JSON Scripted Web Service Module.
 * What ever you return from the Script will be used to the caller as JSON object. 
+* The XML in this folder will have all the scripts, so you can directly import them after loading the Update set.
 
 
 
