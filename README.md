@@ -29,7 +29,8 @@ Once you install that Update Set, You will be greeted with a new module called *
 Go to Scripted JSON Web Service , Click on `new` (which opens a new record) which has two columns:
 
 * END Point URL - The URL to which the Caller,calling this Web Service will `POST`.
-
+     <b> !important </b> 
+     Note that, this is the value you will be using to set `sysparm_scriptedName` in the URL(below)
 * The Script which you would want to run. Remember, this script should ** always ** have a `return` statement, and it always should return [`JSON`](http://www.json.org/)
 
 This variable that you return will be passed back to the caller.
