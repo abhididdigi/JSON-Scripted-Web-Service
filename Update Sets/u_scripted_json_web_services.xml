@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2013-07-29 15:25:31">
+<u_scripted_json_web_services action="INSERT_OR_UPDATE">
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2013-07-29 12:31:24</sys_created_on>
+<sys_id>351263626db6414095a237c9b1408959</sys_id>
+<sys_mod_count>10</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2013-07-29 14:52:23</sys_updated_on>
+<u_end_point_url>u_insertAttachments</u_end_point_url>
+<u_script>/***The following lines are added to make something work fine for you. Please donot modify these lines.**/
+request = Packages.java.net.URLDecoder.decode(request);
+request = new JSON().decode(request);
+/*****************************************End of the addition-Start your script.*********************/
+ gs.log(request.table_name);
+gs.log(request.sys_id);
+gs.log(request.file_name);
+gs.log(request.payload);
+
+var value = GlideStringUtil.base64DecodeAsBytes(request.payload);
+var attachResponse = new Attachment().write(request.table_name,request.sys_id,request.file_name,'',value);
+
+return attachResponse;</u_script>
+</u_scripted_json_web_services>
+<u_scripted_json_web_services action="INSERT_OR_UPDATE">
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2013-07-29 12:21:36</sys_created_on>
+<sys_id>febf57226db6414095a237c9b1408951</sys_id>
+<sys_mod_count>7</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2013-07-29 12:28:32</sys_updated_on>
+<u_end_point_url>u_problem_incident</u_end_point_url>
+<u_script>/***The following lines are added to make something work fine for you. Please donot modify these lines.**/
+request = Packages.java.net.URLDecoder.decode(request);
+request = new JSON().decode(request);
+/*****************************************End of the addition-Start your script.*********************/
+gs.log(request.problem_id);
+var gr = new GlideRecord("incident");
+gr.addQuery("problem_id",request.problem_id);
+gr.query();
+var arr = [];
+while(gr.next()){
+var o = {};
+o['incident_number'] = gr.getValue('number');
+o['problem_number'] = gr.getValue('problem_id');
+arr.push(o);
+
+}
+JSUtil.logObject(arr,"Resulting Javascript Object");
+return arr;</u_script>
+</u_scripted_json_web_services>
+</unload>

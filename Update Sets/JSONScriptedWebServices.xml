@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2013-07-29 15:26:21">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Update set created for Scripted JSON web services. Created by abhididdigi@gmail.com</description>
+<inserted/>
+<name>Scripted JSON Web Services</name>
+<new_count/>
+<release_date/>
+<remote_sys_id>0538de9228bec140d07ff049a588f5f5</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>d27ac8361172010095153b2edde3cb96</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<category>customer</category>
+<comments/>
+<name>sys_ui_related_u_scripted_json_web_services_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sys_ui_related sys_domain="global" table="u_scripted_json_web_services" version="2" view=""&gt;&lt;sys_ui_related_list_entry action="INSERT_OR_UPDATE"&gt;&lt;filter/&gt;&lt;list_id display_value="u_scripted_json_web_services"&gt;9432e21628bec140d07ff049a588f586&lt;/list_id&gt;&lt;order_by/&gt;&lt;position&gt;0&lt;/position&gt;&lt;related_list&gt;u_json_service_input.u_web_service&lt;/related_list&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 13:12:15&lt;/sys_created_on&gt;&lt;sys_id&gt;1832e21628bec140d07ff049a588f586&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 13:12:15&lt;/sys_updated_on&gt;&lt;/sys_ui_related_list_entry&gt;&lt;sys_ui_related_list_entry action="INSERT_OR_UPDATE"&gt;&lt;filter/&gt;&lt;list_id display_value="u_scripted_json_web_services"&gt;9432e21628bec140d07ff049a588f586&lt;/list_id&gt;&lt;order_by/&gt;&lt;position&gt;1&lt;/position&gt;&lt;related_list&gt;u_json_web_service_output.u_web_service&lt;/related_list&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 13:12:15&lt;/sys_created_on&gt;&lt;sys_id&gt;1c32e21628bec140d07ff049a588f586&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 13:12:15&lt;/sys_updated_on&gt;&lt;/sys_ui_related_list_entry&gt;&lt;sys_ui_related_list action="INSERT_OR_UPDATE"&gt;&lt;filter/&gt;&lt;name&gt;u_scripted_json_web_services&lt;/name&gt;&lt;order_by/&gt;&lt;position/&gt;&lt;related_list/&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 13:12:15&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;9432e21628bec140d07ff049a588f586&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 13:12:15&lt;/sys_updated_on&gt;&lt;sys_user/&gt;&lt;view display_value="Default view"&gt;Default view&lt;/view&gt;&lt;view_name/&gt;&lt;/sys_ui_related_list&gt;&lt;/sys_ui_related&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>127ac8361172010095153b2edde3cb99</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table>u_scripted_json_web_services</table>
+<target_name>Scripted JSON Web Services</target_name>
+<type>Related Lists</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_c65c329628bec140d07ff049a588f563</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;JSONScriptedProcessor&lt;/name&gt;&lt;script&gt;var JSONScriptedProcessor = Class.create();&amp;#13;
+&amp;#13;
+JSONScriptedProcessor.prototype = {&amp;#13;
+   /**&amp;#13;
+    * Constructor - constructs a JSONScriptedProcessor object to process HTTP POST/GET&amp;#13;
+    * of JSON object&amp;#13;
+    *&amp;#13;
+    * @param request -&amp;#13;
+    *            HttpServletRequest object&amp;#13;
+    * @param response -&amp;#13;
+    *            HttpServletResponse object&amp;#13;
+    * @param table_name -&amp;#13;
+    *            the targeted table name in the URL&amp;#13;
+    * @processor - the Processor Java class that is handling this process&amp;#13;
+    */&amp;#13;
+   initialize : function(request, response, table_name, processor) {&amp;#13;
+      &amp;#13;
+      this.request = request;&amp;#13;
+      this.response = response;&amp;#13;
+      this.processor = processor;&amp;#13;
+      this.httpMethod = this.request.getMethod();&amp;#13;
+      &amp;#13;
+      &amp;#13;
+      this.error = false;&amp;#13;
+      // new sysParm object..&amp;#13;
+      this.sysparm = {};&amp;#13;
+      //JSON object, will be used in near future..&amp;#13;
+      this.json = new JSON();&amp;#13;
+      &amp;#13;
+      this._setURLParameter("scriptedName");&amp;#13;
+      this._setURLParameter("raw");&amp;#13;
+      this.message = this._getMessage(this.request);&amp;#13;
+      &amp;#13;
+      &amp;#13;
+      &amp;#13;
+   },&amp;#13;
+   &amp;#13;
+   //Set the parameters from the URL - It accepts two parameters - the name of the&amp;#13;
+   //Scripted JSON Processor to be invoked and if the response is to be raw response.&amp;#13;
+   _setURLParameter : function(name) {&amp;#13;
+      var value = this.request.getParameter("sysparm_" + name);&amp;#13;
+      if (value != null) {&amp;#13;
+         this.debug("Setting URL parameter: " + name + " = " + value);&amp;#13;
+         this.sysparm[name] = value;&amp;#13;
+      }&amp;#13;
+   },&amp;#13;
+   &amp;#13;
+   &amp;#13;
+   /*&amp;#13;
+    * Entry point for the script, Processors and prints output to the processor.&amp;#13;
+    * Only allows POST;GET, PUT are all rejected.&amp;#13;
+    *&amp;#13;
+    */&amp;#13;
+   &amp;#13;
+   process:function(){&amp;#13;
+      &amp;#13;
+      &amp;#13;
+      if(this.httpMethod != 'POST') _outputJSONError('Please only use POST method.');&amp;#13;
+         &amp;#13;
+      //If it's not any other method, then process the Script from Script Include.&amp;#13;
+      this._processScript(this.sysparm['scriptedName']);&amp;#13;
+      &amp;#13;
+      &amp;#13;
+      if(this.error) return;&amp;#13;
+         &amp;#13;
+   },&amp;#13;
+   &amp;#13;
+   //Processing the Scripted JSON processor.&amp;#13;
+   //Request object will contain the JSON passed as a part of request.&amp;#13;
+   //Response will be sent back as a JSOn String.&amp;#13;
+   &amp;#13;
+   &amp;#13;
+   _processScript : function(nameOfScript){&amp;#13;
+      &amp;#13;
+      if(JSUtil.nil(nameOfScript)){&amp;#13;
+         this._outputJSONError('Service Now Error:Scripted JSON Webservice Name not found.');&amp;#13;
+         return;&amp;#13;
+      }&amp;#13;
+      &amp;#13;
+      var gr = new GlideRecord("u_scripted_json_web_services");&amp;#13;
+      gr.addQuery("u_end_point_url",nameOfScript);&amp;#13;
+      gr.query();&amp;#13;
+      if(gr.getRowCount() &amp;gt; 1){&amp;#13;
+         this._outputJSONError("ServiceNow Error: There are two Scripted JSON Web Services with the same name.Please contact Service Now administrator.");&amp;#13;
+      }&amp;#13;
+      if(gr.next()){&amp;#13;
+         if(this.sysparm['raw'] == 'true'){// You just want to copy what's in there...&amp;#13;
+            &amp;#13;
+         &amp;#13;
+         this.createFunc(gr.u_script);&amp;#13;
+         &amp;#13;
+         &amp;#13;
+      }&amp;#13;
+      &amp;#13;
+      &amp;#13;
+   }&amp;#13;
+   &amp;#13;
+},&amp;#13;
+&amp;#13;
+createFunc:function(script){&amp;#13;
+   &amp;#13;
+   var response;&amp;#13;
+   var input =this.message;&amp;#13;
+   var encoded = Packages.java.net.URLEncoder.encode(input, 'UTF-8');&amp;#13;
+   //var encoded = '';&amp;#13;
+   var func = 'executeScript("'+encoded+'");function executeScript(request){'+ script+ '}';&amp;#13;
+   &amp;#13;
+   if (typeof GlideEvaluator != 'undefined')&amp;#13;
+      response= GlideEvaluator.evaluateString(func);&amp;#13;
+   else{&amp;#13;
+      &amp;#13;
+      &amp;#13;
+      response= Packages.com.glide.script.Evaluator.evaluateString(func);&amp;#13;
+   }&amp;#13;
+   this._outputJSONResponse(response);&amp;#13;
+   &amp;#13;
+},&amp;#13;
+&amp;#13;
+&amp;#13;
+/**&amp;#13;
+ * output a JSON error object&amp;#13;
+ */&amp;#13;
+_outputJSONError : function(errorMsg,arg) {&amp;#13;
+   &amp;#13;
+   var msg = gs.getMessage(errorMsg, new String(arg));&amp;#13;
+   var response = {&amp;#13;
+      "error" : errorMsg&amp;#13;
+   };&amp;#13;
+   this._outputJSONResponse(response);&amp;#13;
+   this.error = true;&amp;#13;
+},&amp;#13;
+debug : function(msg) {&amp;#13;
+   if (!this.enableDebug)&amp;#13;
+      return;&amp;#13;
+   &amp;#13;
+   &amp;#13;
+},&amp;#13;
+_getMessage : function(request) {&amp;#13;
+   &amp;#13;
+   var message;&amp;#13;
+   var is = request.getInputStream();&amp;#13;
+   var sb;&amp;#13;
+   &amp;#13;
+   if(typeof GlideStringUtil != 'undefined'){&amp;#13;
+      sb =  GlideStringUtil.getStringFromStream(is);&amp;#13;
+   }&amp;#13;
+   else{&amp;#13;
+      &amp;#13;
+      sb = Packages.com.glide.util.StringUtil.getStringFromStream(is);&amp;#13;
+   }&amp;#13;
+   //get the message as string.&amp;#13;
+   return sb;&amp;#13;
+   &amp;#13;
+},&amp;#13;
+_outputJSONResponse : function(response) {&amp;#13;
+   &amp;#13;
+   var r = this.json.encode(response);&amp;#13;
+   this.response.setContentType("application/json");&amp;#13;
+   this.processor.writeOutput(r);&amp;#13;
+}&amp;#13;
+&amp;#13;
+};&amp;#13;
+&lt;/script&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 15:07:33&lt;/sys_created_on&gt;&lt;sys_id&gt;c65c329628bec140d07ff049a588f563&lt;/sys_id&gt;&lt;sys_mod_count&gt;75&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-29 12:14:28&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>167ac8361172010095153b2edde3cb98</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table/>
+<target_name>JSONScriptedProcessor</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_e3ca569228bec140d07ff049a588f512</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_app_application"&gt;&lt;sys_app_application action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;category/&gt;&lt;device_type&gt;browser&lt;/device_type&gt;&lt;hint/&gt;&lt;name&gt;json_service_input&lt;/name&gt;&lt;order/&gt;&lt;roles/&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 12:39:58&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;e3ca569228bec140d07ff049a588f512&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 12:39:58&lt;/sys_updated_on&gt;&lt;title&gt;json_service_input&lt;/title&gt;&lt;u_bid/&gt;&lt;u_call_type/&gt;&lt;u_caller/&gt;&lt;u_contact_id/&gt;&lt;u_created/&gt;&lt;u_created_by/&gt;&lt;u_description/&gt;&lt;u_location/&gt;&lt;u_opened_for/&gt;&lt;u_short_description/&gt;&lt;u_venue/&gt;&lt;view_name/&gt;&lt;/sys_app_application&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>1a7ac8361172010095153b2edde3cb97</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table/>
+<target_name>json_service_input</target_name>
+<type>Application</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_5a189e9228bec140d07ff049a588f544</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_app_application"&gt;&lt;sys_app_application action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;category/&gt;&lt;device_type&gt;browser&lt;/device_type&gt;&lt;hint/&gt;&lt;name&gt;scripted_json_web_services&lt;/name&gt;&lt;order/&gt;&lt;roles/&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 12:28:09&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;5a189e9228bec140d07ff049a588f544&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 12:28:09&lt;/sys_updated_on&gt;&lt;title&gt;Scripted JSON Web Services&lt;/title&gt;&lt;u_bid/&gt;&lt;u_call_type/&gt;&lt;u_caller/&gt;&lt;u_contact_id/&gt;&lt;u_created/&gt;&lt;u_created_by/&gt;&lt;u_description/&gt;&lt;u_location/&gt;&lt;u_opened_for/&gt;&lt;u_short_description/&gt;&lt;u_venue/&gt;&lt;view_name/&gt;&lt;/sys_app_application&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>1e7ac8361172010095153b2edde3cb96</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table/>
+<target_name>scripted_json_web_services</target_name>
+<type>Application</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_scripted_json_web_services_u_script</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sys_dictionary element="u_script" table="u_scripted_json_web_services"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation/&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;element&gt;u_script&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;5000&lt;/max_length&gt;&lt;name&gt;u_scripted_json_web_services&lt;/name&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_qual/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 12:34:21&lt;/sys_created_on&gt;&lt;sys_id&gt;fb69d2d228bec140d07ff049a588f5ee&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-29 07:01:54&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_aging_information/&gt;&lt;u_project_type/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>527ac8361172010095153b2edde3cb98</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table>u_scripted_json_web_services</table>
+<target_name>Scripted JSON Web Services.u_script</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_12189e9228bec140d07ff049a588f546</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_app_module"&gt;&lt;sys_app_module action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;application display_value="scripted_json_web_services"&gt;5a189e9228bec140d07ff049a588f544&lt;/application&gt;&lt;content_page/&gt;&lt;filter/&gt;&lt;hint/&gt;&lt;homepage/&gt;&lt;image/&gt;&lt;link_type&gt;LIST&lt;/link_type&gt;&lt;map_page/&gt;&lt;name&gt;u_scripted_json_web_services&lt;/name&gt;&lt;order/&gt;&lt;query/&gt;&lt;report/&gt;&lt;roles/&gt;&lt;survey/&gt;&lt;survey_overwrite&gt;true&lt;/survey_overwrite&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 12:28:09&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;12189e9228bec140d07ff049a588f546&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 12:28:09&lt;/sys_updated_on&gt;&lt;timeline_page/&gt;&lt;title&gt;Scripted JSON Web Services&lt;/title&gt;&lt;u_call_type/&gt;&lt;u_caller/&gt;&lt;u_contact_id/&gt;&lt;u_created/&gt;&lt;u_created_by/&gt;&lt;u_description/&gt;&lt;u_location/&gt;&lt;u_opened_for/&gt;&lt;u_short_description/&gt;&lt;uncancelable&gt;false&lt;/uncancelable&gt;&lt;view_name/&gt;&lt;window_name/&gt;&lt;/sys_app_module&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>567ac8361172010095153b2edde3cb97</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table>u_scripted_json_web_services</table>
+<target_name>u_scripted_json_web_services</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<category>customer</category>
+<comments/>
+<name>sys_script_5bf3239a28bec140d07ff049a588f5f1</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_label/&gt;&lt;action_name/&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_run_at&gt;server&lt;/action_run_at&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;application/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;u_scripted_json_web_services&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;name&gt;Addthoseprocessinglines&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;read_access_action&gt;false&lt;/read_access_action&gt;&lt;script&gt;//Basically this is to take care of request processing, as I've very limited access to request Object.Please don't change this, until you know what&amp;#13;
+//you are doing.&amp;#13;
+&amp;#13;
+var scriptToBeAdded = '/***The following lines are added to make something work fine for you. Please donot modify these lines.**/'+"\n"+&amp;#13;
+'request = Packages.java.net.URLDecoder.decode(request);\n'+&amp;#13;
+'request = new JSON().decode(request);\n'+&amp;#13;
+&amp;#13;
+'/*****************************************End of the addition-Start your script.*********************/\n';&amp;#13;
+&amp;#13;
+current.u_script = scriptToBeAdded+current.u_script;&lt;/script&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 18:02:34&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;5bf3239a28bec140d07ff049a588f5f1&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-29 09:10:50&lt;/sys_updated_on&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>5a7ac8361172010095153b2edde3cb96</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table>u_scripted_json_web_services</table>
+<target_name>Addthoseprocessinglines</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<category>customer</category>
+<comments/>
+<name>sys_ui_list_u_scripted_json_web_services_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sys_ui_list parent="" sys_domain="global" table="u_scripted_json_web_services" version="2" view=""&gt;&lt;sys_ui_list_element action="INSERT_OR_UPDATE"&gt;&lt;average_value&gt;false&lt;/average_value&gt;&lt;element&gt;sys_created_on&lt;/element&gt;&lt;list_id display_value="u_scripted_json_web_services"&gt;2e99d2d228bec140d07ff049a588f5fc&lt;/list_id&gt;&lt;max_value&gt;false&lt;/max_value&gt;&lt;min_value&gt;false&lt;/min_value&gt;&lt;position&gt;0&lt;/position&gt;&lt;sum&gt;false&lt;/sum&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 12:34:43&lt;/sys_created_on&gt;&lt;sys_id&gt;ae99d2d228bec140d07ff049a588f5fc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 12:34:43&lt;/sys_updated_on&gt;&lt;/sys_ui_list_element&gt;&lt;sys_ui_list_element action="INSERT_OR_UPDATE"&gt;&lt;average_value&gt;false&lt;/average_value&gt;&lt;element&gt;u_end_point_url&lt;/element&gt;&lt;list_id display_value="u_scripted_json_web_services"&gt;2e99d2d228bec140d07ff049a588f5fc&lt;/list_id&gt;&lt;max_value&gt;false&lt;/max_value&gt;&lt;min_value&gt;false&lt;/min_value&gt;&lt;position&gt;1&lt;/position&gt;&lt;sum&gt;false&lt;/sum&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 12:34:43&lt;/sys_created_on&gt;&lt;sys_id&gt;2299d2d228bec140d07ff049a588f5fd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 12:34:43&lt;/sys_updated_on&gt;&lt;/sys_ui_list_element&gt;&lt;sys_ui_list_element action="INSERT_OR_UPDATE"&gt;&lt;average_value&gt;false&lt;/average_value&gt;&lt;element&gt;u_script&lt;/element&gt;&lt;list_id display_value="u_scripted_json_web_services"&gt;2e99d2d228bec140d07ff049a588f5fc&lt;/list_id&gt;&lt;max_value&gt;false&lt;/max_value&gt;&lt;min_value&gt;false&lt;/min_value&gt;&lt;position&gt;2&lt;/position&gt;&lt;sum&gt;false&lt;/sum&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 12:34:43&lt;/sys_created_on&gt;&lt;sys_id&gt;a299d2d228bec140d07ff049a588f5fd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 12:34:43&lt;/sys_updated_on&gt;&lt;/sys_ui_list_element&gt;&lt;sys_ui_list action="INSERT_OR_UPDATE"&gt;&lt;average_value&gt;false&lt;/average_value&gt;&lt;element/&gt;&lt;max_value&gt;false&lt;/max_value&gt;&lt;min_value&gt;false&lt;/min_value&gt;&lt;name&gt;u_scripted_json_web_services&lt;/name&gt;&lt;parent/&gt;&lt;position/&gt;&lt;relationship/&gt;&lt;sum&gt;false&lt;/sum&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 12:34:43&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;2e99d2d228bec140d07ff049a588f5fc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 12:34:43&lt;/sys_updated_on&gt;&lt;sys_user/&gt;&lt;view display_value="Default view"&gt;Default view&lt;/view&gt;&lt;view_name/&gt;&lt;/sys_ui_list&gt;&lt;/sys_ui_list&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>5a7ac8361172010095153b2edde3cb99</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table>u_scripted_json_web_services</table>
+<target_name>Scripted JSON Web Services</target_name>
+<type>List Layout</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<category>customer</category>
+<comments/>
+<name>sys_ui_list_u_json_service_input_u_scripted_json_web_services_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sys_ui_list parent="u_scripted_json_web_services" sys_domain="global" table="u_json_service_input" version="2" view=""&gt;&lt;sys_ui_list_element action="INSERT_OR_UPDATE"&gt;&lt;average_value&gt;false&lt;/average_value&gt;&lt;element&gt;u_name&lt;/element&gt;&lt;list_id display_value="u_json_service_input"&gt;d8c4aa1628bec140d07ff049a588f53f&lt;/list_id&gt;&lt;max_value&gt;false&lt;/max_value&gt;&lt;min_value&gt;false&lt;/min_value&gt;&lt;position&gt;0&lt;/position&gt;&lt;sum&gt;false&lt;/sum&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 13:23:26&lt;/sys_created_on&gt;&lt;sys_id&gt;5cc4aa1628bec140d07ff049a588f53f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 13:23:26&lt;/sys_updated_on&gt;&lt;/sys_ui_list_element&gt;&lt;sys_ui_list_element action="INSERT_OR_UPDATE"&gt;&lt;average_value&gt;false&lt;/average_value&gt;&lt;element&gt;sys_created_on&lt;/element&gt;&lt;list_id display_value="u_json_service_input"&gt;d8c4aa1628bec140d07ff049a588f53f&lt;/list_id&gt;&lt;max_value&gt;false&lt;/max_value&gt;&lt;min_value&gt;false&lt;/min_value&gt;&lt;position&gt;1&lt;/position&gt;&lt;sum&gt;false&lt;/sum&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 13:23:26&lt;/sys_created_on&gt;&lt;sys_id&gt;dcc4aa1628bec140d07ff049a588f53f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 13:23:26&lt;/sys_updated_on&gt;&lt;/sys_ui_list_element&gt;&lt;sys_ui_list action="INSERT_OR_UPDATE"&gt;&lt;average_value&gt;false&lt;/average_value&gt;&lt;element/&gt;&lt;max_value&gt;false&lt;/max_value&gt;&lt;min_value&gt;false&lt;/min_value&gt;&lt;name&gt;u_json_service_input&lt;/name&gt;&lt;parent&gt;u_scripted_json_web_services&lt;/parent&gt;&lt;position/&gt;&lt;relationship/&gt;&lt;sum&gt;false&lt;/sum&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 13:23:26&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;d8c4aa1628bec140d07ff049a588f53f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 13:23:26&lt;/sys_updated_on&gt;&lt;sys_user/&gt;&lt;view display_value="Default view"&gt;Default view&lt;/view&gt;&lt;view_name/&gt;&lt;/sys_ui_list&gt;&lt;/sys_ui_list&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>5e7ac8361172010095153b2edde3cb98</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table>u_json_service_input</table>
+<target_name>Scripted JSON Web Services.label</target_name>
+<type>List Layout</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_c39432a61132010095153b2edde3cb74</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;sys_created_on&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;messages/&gt;&lt;name&gt;css_checkForReturn&lt;/name&gt;&lt;script&gt;function onSubmit() {&amp;#13;
+   //Type appropriate comment here, and begin script below&amp;#13;
+   if(g_form.getValue('u_script').indexOf('return') == -1){&amp;#13;
+      alert("Warning: There is no return statement in the script - The JSON response will be null");&amp;#13;
+      &amp;#13;
+   }&amp;#13;
+}&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-29 09:12:22&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;c39432a61132010095153b2edde3cb74&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides display_value=""&gt;global&lt;/sys_overrides&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-29 09:12:22&lt;/sys_updated_on&gt;&lt;table&gt;u_scripted_json_web_services&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;u_short/&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>927ac8361172010095153b2edde3cb97</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table>u_scripted_json_web_services</table>
+<target_name>css_checkForReturn</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT</action>
+<category>customer</category>
+<comments/>
+<name>dictionary_u_scripted_json_web_services_9a189e9228bec140d07ff049a588f542</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;database&gt;&lt;element label="Scripted JSON Web Services" name="u_scripted_json_web_services" type="collection"&gt;&lt;element label="End Point URL" max_length="80" name="u_end_point_url" type="string"/&gt;&lt;element label="Script" max_length="5000" name="u_script" type="script"/&gt;&lt;/element&gt;&lt;/database&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>967ac8361172010095153b2edde3cb99</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table>u_scripted_json_web_services</table>
+<target_name>Scripted JSON Web Services</target_name>
+<type>Database field(s)</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_scripted_json_web_services_u_output</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sys_dictionary action="DELETE" element="u_output" table="u_scripted_json_web_services"/&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>9a7ac8361172010095153b2edde3cb98</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table>u_scripted_json_web_services</table>
+<target_name>Scripted JSON Web Services.u_output</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<category>customer</category>
+<comments/>
+<name>sys_processor_b8dcbe9628bec140d07ff049a588f51b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_processor"&gt;&lt;sys_processor action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;description/&gt;&lt;name&gt;JSONScriptedProcessor&lt;/name&gt;&lt;parameters&gt;scriptedJSON&lt;/parameters&gt;&lt;path&gt;ScriptedJSON&lt;/path&gt;&lt;roles/&gt;&lt;script&gt;new JSONScriptedProcessor(g_request,g_response,g_target,g_processor).process();&amp;#13;
+&amp;#13;
+&amp;#13;
+&lt;/script&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 15:08:36&lt;/sys_created_on&gt;&lt;sys_id&gt;b8dcbe9628bec140d07ff049a588f51b&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-29 08:51:37&lt;/sys_updated_on&gt;&lt;type&gt;script&lt;/type&gt;&lt;/sys_processor&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>9e7ac8361172010095153b2edde3cb97</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table/>
+<target_name>JSONScriptedProcessor</target_name>
+<type>Processor</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_5ffad69228bec140d07ff049a588f535</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_app_application"&gt;&lt;sys_app_application action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;category/&gt;&lt;device_type&gt;browser&lt;/device_type&gt;&lt;hint/&gt;&lt;name&gt;json_web_service_output&lt;/name&gt;&lt;order/&gt;&lt;roles/&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 12:40:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;5ffad69228bec140d07ff049a588f535&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 12:40:47&lt;/sys_updated_on&gt;&lt;title&gt;json_web_service_output&lt;/title&gt;&lt;u_bid/&gt;&lt;u_call_type/&gt;&lt;u_caller/&gt;&lt;u_contact_id/&gt;&lt;u_created/&gt;&lt;u_created_by/&gt;&lt;u_description/&gt;&lt;u_location/&gt;&lt;u_opened_for/&gt;&lt;u_short_description/&gt;&lt;u_venue/&gt;&lt;view_name/&gt;&lt;/sys_app_application&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>d27ac8361172010095153b2edde3cb99</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table/>
+<target_name>json_web_service_output</target_name>
+<type>Application</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<category>customer</category>
+<comments/>
+<name>sys_ui_list_u_json_web_service_output_u_scripted_json_web_services_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sys_ui_list parent="u_scripted_json_web_services" sys_domain="global" table="u_json_web_service_output" version="2" view=""&gt;&lt;sys_ui_list_element action="INSERT_OR_UPDATE"&gt;&lt;average_value&gt;false&lt;/average_value&gt;&lt;element&gt;sys_created_on&lt;/element&gt;&lt;list_id display_value="u_json_web_service_output"&gt;e4d42a1628bec140d07ff049a588f554&lt;/list_id&gt;&lt;max_value&gt;false&lt;/max_value&gt;&lt;min_value&gt;false&lt;/min_value&gt;&lt;position&gt;0&lt;/position&gt;&lt;sum&gt;false&lt;/sum&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 13:23:43&lt;/sys_created_on&gt;&lt;sys_id&gt;68d42a1628bec140d07ff049a588f554&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 13:23:43&lt;/sys_updated_on&gt;&lt;/sys_ui_list_element&gt;&lt;sys_ui_list_element action="INSERT_OR_UPDATE"&gt;&lt;average_value&gt;false&lt;/average_value&gt;&lt;element&gt;u_order&lt;/element&gt;&lt;list_id display_value="u_json_web_service_output"&gt;e4d42a1628bec140d07ff049a588f554&lt;/list_id&gt;&lt;max_value&gt;false&lt;/max_value&gt;&lt;min_value&gt;false&lt;/min_value&gt;&lt;position&gt;1&lt;/position&gt;&lt;sum&gt;false&lt;/sum&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 13:23:43&lt;/sys_created_on&gt;&lt;sys_id&gt;e8d42a1628bec140d07ff049a588f554&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 13:23:43&lt;/sys_updated_on&gt;&lt;/sys_ui_list_element&gt;&lt;sys_ui_list_element action="INSERT_OR_UPDATE"&gt;&lt;average_value&gt;false&lt;/average_value&gt;&lt;element&gt;u_name&lt;/element&gt;&lt;list_id display_value="u_json_web_service_output"&gt;e4d42a1628bec140d07ff049a588f554&lt;/list_id&gt;&lt;max_value&gt;false&lt;/max_value&gt;&lt;min_value&gt;false&lt;/min_value&gt;&lt;position&gt;2&lt;/position&gt;&lt;sum&gt;false&lt;/sum&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 13:23:43&lt;/sys_created_on&gt;&lt;sys_id&gt;6cd42a1628bec140d07ff049a588f554&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 13:23:43&lt;/sys_updated_on&gt;&lt;/sys_ui_list_element&gt;&lt;sys_ui_list action="INSERT_OR_UPDATE"&gt;&lt;average_value&gt;false&lt;/average_value&gt;&lt;element/&gt;&lt;max_value&gt;false&lt;/max_value&gt;&lt;min_value&gt;false&lt;/min_value&gt;&lt;name&gt;u_json_web_service_output&lt;/name&gt;&lt;parent&gt;u_scripted_json_web_services&lt;/parent&gt;&lt;position/&gt;&lt;relationship/&gt;&lt;sum&gt;false&lt;/sum&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 13:23:43&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;e4d42a1628bec140d07ff049a588f554&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 13:23:43&lt;/sys_updated_on&gt;&lt;sys_user/&gt;&lt;view display_value="Default view"&gt;Default view&lt;/view&gt;&lt;view_name/&gt;&lt;/sys_ui_list&gt;&lt;/sys_ui_list&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>d67ac8361172010095153b2edde3cb98</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table>u_json_web_service_output</table>
+<target_name>Scripted JSON Web Services.label</target_name>
+<type>List Layout</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT</action>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_scripted_json_web_services_u_end_point_url</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sys_dictionary action="INSERT" element="u_end_point_url" table="u_scripted_json_web_services"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation/&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;element&gt;u_end_point_url&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;80&lt;/max_length&gt;&lt;name&gt;u_scripted_json_web_services&lt;/name&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_qual/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 12:31:18&lt;/sys_created_on&gt;&lt;sys_id&gt;d0c852d228bec140d07ff049a588f5e6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 12:31:18&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;u_aging_information/&gt;&lt;u_project_type/&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>da7ac8361172010095153b2edde3cb97</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table>u_scripted_json_web_services</table>
+<target_name>Scripted JSON Web Services.u_end_point_url</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_5f99de1228bec140d07ff049a588f5c9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sys_ui_section section_id="5f99de1228bec140d07ff049a588f5c9" sys_domain="global" table="u_scripted_json_web_services" version="2"&gt;&lt;sys_ui_element action="INSERT_OR_UPDATE"&gt;&lt;element&gt;u_end_point_url&lt;/element&gt;&lt;position&gt;0&lt;/position&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 13:45:46&lt;/sys_created_on&gt;&lt;sys_id&gt;1fd9a61628bec140d07ff049a588f5d3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_ui_section display_value=""&gt;5f99de1228bec140d07ff049a588f5c9&lt;/sys_ui_section&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 13:45:46&lt;/sys_updated_on&gt;&lt;sys_user/&gt;&lt;type/&gt;&lt;/sys_ui_element&gt;&lt;sys_ui_element action="INSERT_OR_UPDATE"&gt;&lt;element&gt;u_script&lt;/element&gt;&lt;position&gt;1&lt;/position&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 13:45:46&lt;/sys_created_on&gt;&lt;sys_id&gt;9fd9a61628bec140d07ff049a588f5d3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_ui_section display_value=""&gt;5f99de1228bec140d07ff049a588f5c9&lt;/sys_ui_section&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 13:45:46&lt;/sys_updated_on&gt;&lt;sys_user/&gt;&lt;type/&gt;&lt;/sys_ui_element&gt;&lt;sys_ui_element action="INSERT_OR_UPDATE"&gt;&lt;element&gt;u_output&lt;/element&gt;&lt;position&gt;2&lt;/position&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 13:45:46&lt;/sys_created_on&gt;&lt;sys_id&gt;13d9a61628bec140d07ff049a588f5d4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_ui_section display_value=""&gt;5f99de1228bec140d07ff049a588f5c9&lt;/sys_ui_section&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 13:45:46&lt;/sys_updated_on&gt;&lt;sys_user/&gt;&lt;type/&gt;&lt;/sys_ui_element&gt;&lt;sys_ui_section action="INSERT_OR_UPDATE"&gt;&lt;caption/&gt;&lt;header&gt;false&lt;/header&gt;&lt;name&gt;u_scripted_json_web_services&lt;/name&gt;&lt;roles/&gt;&lt;sys_created_by&gt;dab&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-07-28 12:34:46&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;5f99de1228bec140d07ff049a588f5c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides display_value=""&gt;global&lt;/sys_overrides&gt;&lt;sys_updated_by&gt;dab&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2013-07-28 12:34:46&lt;/sys_updated_on&gt;&lt;sys_user/&gt;&lt;title&gt;true&lt;/title&gt;&lt;view display_value="Default view"&gt;Default view&lt;/view&gt;&lt;view_name/&gt;&lt;/sys_ui_section&gt;&lt;/sys_ui_section&gt;</payload>
+<remote_update_set display_value="Scripted JSON Web Services">d27ac8361172010095153b2edde3cb96</remote_update_set>
+<sys_created_by>dab</sys_created_by>
+<sys_created_on>2013-07-29 15:26:20</sys_created_on>
+<sys_id>de7ac8361172010095153b2edde3cb96</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dab</sys_updated_by>
+<sys_updated_on>2013-07-29 15:26:20</sys_updated_on>
+<table>u_scripted_json_web_services</table>
+<target_name>Scripted JSON Web Services</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
