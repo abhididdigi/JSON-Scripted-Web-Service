@@ -57,7 +57,7 @@ The Parameter will be available to the Script of JSON Scripted Web service as `r
 TODO:
 -------
 
-* Add JSONParser to check if the JSON that is being received and Sent is a valid JSON, else raise an error
+<strike>* Add JSONParser to check if the JSON that is being received and Sent is a valid JSON, else raise an error</strike>
 * Add a check so that only the user with a read permission can execute the queries.  
 
 
