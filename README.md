@@ -57,7 +57,12 @@ The Parameter will be available to the Script of JSON Scripted Web service as `r
 TODO:
 -------
 
-<strike>* Add JSONParser to check if the JSON that is being received and Sent is a valid JSON, else raise an error</strike>
+~~ * Add JSONParser to check if the JSON that is being received and Sent is a valid JSON, else raise an error ~~
+    
+     Use [JSUTil2's Validate JSON](https://github.com/abhididdigi/JSUtil2/blob/master/docs.md#validatejson) to validate the input and the output JSON. The    script in this Script Include isn't updated.
+     
+     
+
 * Add a check so that only the user with a read permission can execute the queries.  
 
 
