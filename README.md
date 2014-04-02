@@ -1,6 +1,8 @@
 JSON-Scripted-Web-Service
 =========================
 
+A very serious issue is open, so please use this at your own risk. It would be helpful if you can shed some light on that : https://github.com/abhididdigi/JSON-Scripted-Web-Service/issues/1
+
 A Script Include to cater to Scripted Web services, using JSON over REST.
 
 #### What is this: 
