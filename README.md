@@ -72,6 +72,12 @@ Other Links:
 
 * For installation of Update Sets please visit this [WIKI LINK](http://wiki.servicenow.com/index.php?title=Using_Update_Sets)
 
+A Note about MemLeak issue #1 : https://github.com/abhididdigi/JSON-Scripted-Web-Service/issues/1
+==========================
+
+If you are facing a MemLeak issue just like Wobloz, try using the Script present in the Branch : Issue-#1---Memory-Leak. I'm hoping that should fix the issue.
+
+
 
 Thanks
 -------
